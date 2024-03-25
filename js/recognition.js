@@ -72,8 +72,6 @@ const convertObjJs = (text) => {
 
 
 //CREATE SVG WORDS CLOUD
-// Crear una lista de palabras únicas ordenadas por frecuencia
-
 const generateSVGCloud = (objWords) => {
     let uniqueWords = Object.keys(objWords).sort((a, b) => objWords[b] - objWords[a]);
 
@@ -116,8 +114,6 @@ const generateSVGCloud = (objWords) => {
         })
         .on("end", draw);
     layout.start();
-
-
 }
 
 
